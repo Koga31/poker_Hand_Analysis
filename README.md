@@ -9,5 +9,3 @@ Tecnologias e Ferramentas
 Python -> lógica de jogo, análise de dados.  
 SQLite ou PostgreSQL -> banco de dados relacional para registrar jogadas.  
 pandas + matplotlib/seaborn -> análise estatística e visualização.  
-Jupyter Notebook -> documentação interativa.  
-Streamlit -> interface simples.
