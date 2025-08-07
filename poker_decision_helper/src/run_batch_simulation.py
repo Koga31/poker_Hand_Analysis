@@ -2,7 +2,7 @@ from game_logic import simular_rodada
 from database import criar_banco
 from tqdm import tqdm
 
-def simular_varias_rodadas(qtd_rodadas=1000, num_oponentes=3):
+def simular_varias_rodadas(qtd_rodadas=1, num_oponentes=5):
     criar_banco()
 
     print(f"Simulando {qtd_rodadas} rodadas com {num_oponentes} oponentes...\n")
@@ -10,4 +10,5 @@ def simular_varias_rodadas(qtd_rodadas=1000, num_oponentes=3):
         simular_rodada(num_oponentes=num_oponentes)
 
 if __name__ == "__main__":
-    simular_varias_rodadas(qtd_rodadas=1000, num_oponentes=3)
+    simular_varias_rodadas(qtd_rodadas=10000, num_oponentes=5)
+

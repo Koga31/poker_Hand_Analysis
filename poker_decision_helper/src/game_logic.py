@@ -56,4 +56,4 @@ def simular_rodada(num_oponentes=3):
 # Execução de teste
 if __name__ == "__main__":
     criar_banco()
-    simular_rodada(num_oponentes=3)
+    simular_rodada(num_oponentes=5)

@@ -34,7 +34,11 @@ def classificar_mao(cartas):
     is_straight_val = is_straight(cartas)
     is_flush_val = is_flush(cartas)
 
-    if is_flush_val and is_straight_val:
+    valores_set = set(VALORES_PESO[v] for v, _ in cartas)
+    naipes = [n for _, n in cartas]
+    if is_flush_val and valores_set == {10, 11, 12, 13, 14} and len(set(naipes)) == 1:
+        return (9, "Royal Flush")
+    elif is_flush_val and is_straight_val:
         return (8, "Straight Flush")
     elif val_counts == [4, 1]:
         return (7, "Four of a Kind")
